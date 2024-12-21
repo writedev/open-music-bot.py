@@ -3,7 +3,7 @@ import discord
 from discord import app_commands
 import os
 import asyncio
-import config
+import config_example
 import json
 import logging
 import cogs.tag as tag
@@ -38,4 +38,4 @@ if __name__ == "__main__":
     tag.show_tag()
     asyncio.run(load_music_commands())
     asyncio.run(load_music_events())
-    bot.run(config.DISCORD_BOT_TOKEN, log_handler=handler,  log_level=logging.DEBUG)
+    bot.run(config_example.DISCORD_BOT_TOKEN, log_handler=handler,  log_level=logging.DEBUG)
